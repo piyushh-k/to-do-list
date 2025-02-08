@@ -1,8 +1,14 @@
+import Picker from "./color";
 
-import "./App.css";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <center>
+        <Picker />
+      </center>
+    </>
+  );
 }
 
 export default App;

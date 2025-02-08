@@ -1,8 +1,79 @@
-*{
+/* App.css */
+
+/* General body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #d3c2c2;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-body{
-  background-color: #242424;;
+/* Container styles */
+.color-picker-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+}
+
+/* Heading style */
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Color display box */
+.color-display {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  transition: background-color 0.5s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.color-display p {
+  color: #333;
+  margin: 0;
+  font-size: 20px;
+}
+
+/* Label styling */
+.label {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+/* Color input styling */
+input[type="color"] {
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for color input */
+input[type="color"]:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus effect for color input */
+input[type="color"]:focus {
+  outline: none;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
