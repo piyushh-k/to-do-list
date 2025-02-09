@@ -1,6 +1,6 @@
 # React To-Do List App
 
-![Screenshot](piyushh-k/to-do-list/todo.png)
+![Screenshot](https://github.com/piyushh-k/to-do-list/blob/ebd27fc6ab958adc97763f764f63a9d07dae85fc/todo.png)
 
 
 ## Introduction
