@@ -1,12 +1,11 @@
-import Picker from "./color";
-
+import ToDoList from "./list";
 
 function App() {
   return (
     <>
-      <center>
-        <Picker />
-      </center>
+    <center>
+      <ToDoList />
+    </center>
     </>
   );
 }
