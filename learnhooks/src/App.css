@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #f0f0f0;
+  overflow: hidden;
+}
+
+.todo-container {
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 400px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.todo-title {
+  text-align: center;
+  font-size: 24px;
+  color: #f0a500;
+  margin-bottom: 20px;
+  animation: slideInDown 1s ease-in-out;
+}
+
+@keyframes slideInDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.task-input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.task-input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #555;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #3c3c3c;
+  color: #fff;
+}
+
+.add-task-button {
+  padding: 12px 24px;
+  background-color: #f0a500;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.add-task-button:hover {
+  background-color: #d48800;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #555;
+  animation: slideInLeft 0.5s ease-in-out;
+}
+
+@keyframes slideInLeft {
+  0% { opacity: 0; transform: translateX(-20px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.task-text {
+  flex: 1;
+  font-size: 18px;
+  color: #f0f0f0;
+}
+
+.task-buttons button {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.task-buttons button.move-button.up {
+  background-color: #d2d0d4;
+}
+
+.task-buttons button.move-button.down {
+  background-color: #d2d0d4;
+}
+
+.task-buttons button.move-button.up:hover,
+.task-buttons button.move-button.down:hover {
+  background-color: #898491;
+}
+
+.task-buttons button:hover {
+  background-color: #c9302c;
+}
+
+.task-buttons button:active {
+  transform: scale(0.95);
+}
