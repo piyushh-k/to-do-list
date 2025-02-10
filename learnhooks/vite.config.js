@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/to-do-list/', // This should match the repository name
+  base: '/to-do-list/', 
   build: {
     outDir: 'dist',
   },
-  publicDir: 'public', // Specify the public directory
+  publicDir: 'public', 
 });
