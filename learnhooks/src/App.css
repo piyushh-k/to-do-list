@@ -27,9 +27,9 @@ body {
 
 .todo-title {
   text-align: center;
-  font-size: 24px;
+  font-size: 25px;
   color: #f0a500;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   animation: slideInDown 1s ease-in-out;
 }
 
@@ -60,9 +60,9 @@ body {
   color: #fff;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 17px;
   cursor: pointer;
-  margin-left: 10px;
+  margin-left: 11px;
   transition: background-color 0.3s ease;
 }
 
