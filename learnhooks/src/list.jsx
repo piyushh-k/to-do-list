@@ -6,19 +6,19 @@ function ToDoList() {
   const [tasks, setTasks] = useState(["Eat Breakfast", "Attend lectures", "Buy Shades"]);
   const [tasksCheck, settasksCheck] = useState("");
 
-  function addTask() {
+  function addTask() { //Adds tasks in the tasks array
     if (tasksCheck) {
       setTasks([...tasks, tasksCheck]);
       settasksCheck("");
     }
   }
 
-  function removeTask(index) {
+  function removeTask(index) { //removes tasks from the tasks array
     const updatedTasks = tasks.filter((_, i) => i !== index);
     setTasks(updatedTasks);
   }
 
-  function taskUp(index) {
+  function taskUp(index) { //moves tasks up using array manipulation
     if (index > 0) {
       const updatedTasks = [...tasks];
       [updatedTasks[index], updatedTasks[index - 1]] = [
@@ -29,7 +29,7 @@ function ToDoList() {
     }
   }
 
-  function taskDown(index) {
+  function taskDown(index) { //moves tasks down using array manipulation
     if (index < tasks.length - 1) {
       const updatedTasks = [...tasks];
       [updatedTasks[index], updatedTasks[index + 1]] = [
